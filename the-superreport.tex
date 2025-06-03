@@ -1,0 +1,43 @@
+\documentclass[11pt,a4paper]{report}
+
+\includeonly{the-superreport-ch-1,the-superreport-ch-2,the-superreport-ch-3}
+
+%%  utf8 used because of LuaLaTeX
+\usepackage[english,french]{babel}
+\frenchbsetup{AutoSpaceFootnotes,FrenchFootnotes}
+
+\setlength{\topmargin}{-6mm}
+\setlength{\textheight}{230mm}
+\setlength{\textwidth}{160mm}
+\setlength{\evensidemargin}{-5.45mm}
+\setlength{\oddsidemargin}{-5.45mm}
+
+\newcommand{\cjdcipersonname}[2]{#2\ #1\index{\cjdcipersonnameindex{#1}{#2}}}
+\newcommand{\cjdcipersonnameindex}[2]{#1, #2}
+
+\newcommand{\frule}[1][\textwidth]{\rule{#1}{0.4mm}}
+\newcommand{\logo}[1]{\textsc{#1}}
+\newcommand{\TikZ}{Ti\textit{k}Z}
+
+\renewcommand{\floatpagefraction}{0.7}
+\renewcommand{\labelitemi}{---}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\topfraction}{0.9}
+
+\title{Rapport d'activités de la compagnie \\
+\logo{cjdci}\thanks{\textbf{C}ompagnie des \textbf{J}oyeux \textbf{D}rilles
+du \textbf{C}\textsc{mi} \textbf{I}nformatique.}}
+\author{}
+\date{Juin 2025}
+
+\begin{document}
+
+\maketitle
+
+\include{the-superreport-ch-1}
+
+\include{the-superreport-ch-2}
+
+\include{the-superreport-ch-3}
+
+\end{document}

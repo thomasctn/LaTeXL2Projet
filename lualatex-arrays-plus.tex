@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+
+\usepackage[english,french]{babel}
+
+\newcommand{\infilesd}[1]{files/#1}
+\directlua{dofile(kpse.find_file("\infilesd{split-plus.lua}"))}
+\newcommand{\luaarrayplus}[2][]{\directlua{mk_array_plus("#2","#1")}}
+
+%%  Définition de 8 places au plus pour les arguments de la figure à tracer.
+%%  On bourre avec des valeurs factices.
+\newcommand{\getarrayplusone}{\empty}
+\newcommand{\getarrayplustwo}{\empty}
+\newcommand{\getarrayplusthree}{\empty}
+\newcommand{\getarrayplusfour}{\empty}
+\newcommand{\getarrayplusfive}{\empty}
+\newcommand{\getarrayplussix}{\empty}
+\newcommand{\getarrayplusseven}{\empty}
+\newcommand{\getarraypluseight}{\empty}
+
+\newcommand{\ifempty}[3]{{\edef\tmp{#1}\ifx\tmp\empty#2\else#3\fi}}
+
+\newcommand{\makepicture}[8]{%  Dés qu'un argument est factice, on s'arrête.
+ \ifempty{#1}{*}{%
+  #1 --- \ifempty{#2}{*}{%
+   #2 --- \ifempty{#3}{*}{%
+    #3 --- \ifempty{#4}{*}{%
+     #4 --- \ifempty{#5}{*}{%
+      #5 --- \ifempty{#6}{*}{%
+       #6 --- \ifempty{#7}{*}{#7 --- \ifempty{#8}{*}{#8}}}}}}}}}
+
+\begin{document}
+
+Début du tournage de la super-production.\bigskip
+
+\begin{tabular}{*{6}{|c}|}
+\hline
+Titre 1 & Titre 2 & Titre 3 & Titre 4 & Titre 5 & Titre 6 \\ \hline
+\luaarrayplus{\infilesd{arraydata.txt}}
+\hline
+\end{tabular}
+
+\mbox{}
+
+Il est impossible de définir --- ou de redéfinir --- des commandes tant que
+nous sommes embourbés dans un environnement
+\foreignlanguage{english}{\texttt{tabular}}. C'est pourquoi ces commandes sont
+mises en réserve de la République par la fonction
+\foreignlanguage{english}{\textsf{Lua} \texttt{mk\_array\_plus(\ldots,\ldots)}}
+et c'est la fonction suivante
+\foreignlanguage{english}{\texttt{put\_renewcommands()}} qui les envoie à
+\foreignlanguage{english}{Lua\LaTeX} !
+
+\directlua{put_renewcommands()}
+
+Vous pouvez vérifier que les \emph{derniers} nombres de \emph{chaque} ligne
+sont les arguments successifs de l'appel suivant. On suppose que le nombre de
+lignes du fichier \foreignlanguage{english}{\textsf{.txt}} traité n'excède
+pas~8.
+
+\makepicture{%
+ \getarrayplusone}{\getarrayplustwo}{\getarrayplusthree}{\getarrayplusfour}{%
+ \getarrayplusfive}{\getarrayplussix}{\getarrayplusseven}{\getarraypluseight}
+
+\end{document}
