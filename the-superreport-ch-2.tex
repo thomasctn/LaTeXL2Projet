@@ -1,3 +1,25 @@
 \chapter{Comptes} \label{accounts-chapter}
 
-**********
+    
+
+\begin{table}[h]
+    \begin{center}
+    \begin{small}
+    \pgfplotstabletypeset[%
+     col sep=comma,  % the separator in our .csv file
+     string type,        % added in hopes of enabling alphabetic input.
+     header=has colnames,
+     %%empty cells with={\multicolumn{1}{c|}{---}},
+     every head row/.style={before row=\hline,after row=\hline},
+     every even row/.style={before row={\rowcolor[gray]{0.8}},after row=\hline},
+     every odd row/.style={after row=\hline},
+     output empty row/.style={},
+     display columns/0/.style={string type,column type=|l|},
+     display columns/1/.style={string type,column type=l|},
+     display columns/2/.style={string type,column type=l|}]{%
+     files/accounts.csv}
+    \end{small}
+    \end{center}
+    \caption{Table des recettes et dépence de la compagnie}
+    \end{table}
+
