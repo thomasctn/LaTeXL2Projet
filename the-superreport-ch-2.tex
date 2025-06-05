@@ -1,25 +1,35 @@
 \chapter{Comptes} \label{accounts-chapter}
 
-    
+
 
 \begin{table}[h]
-    \begin{center}
+    \centering
+    \caption{Table des recettes et dépenses de la compagnie}
     \begin{small}
-    \pgfplotstabletypeset[%
-     col sep=comma,  % the separator in our .csv file
-     string type,        % added in hopes of enabling alphabetic input.
-     header=has colnames,
-     %%empty cells with={\multicolumn{1}{c|}{---}},
-     every head row/.style={before row=\hline,after row=\hline},
-     every even row/.style={before row={\rowcolor[gray]{0.8}},after row=\hline},
-     every odd row/.style={after row=\hline},
-     output empty row/.style={},
-     display columns/0/.style={string type,column type=|l|},
-     display columns/1/.style={string type,column type=l|},
-     display columns/2/.style={string type,column type=l|}]{%
-     files/accounts.csv}
+    \pgfplotstabletypeset[
+        col sep=comma,
+        string type,
+        header=true,
+        every head row/.style={
+            before row=\hline\rowcolor{gray!50}, after row=\hline
+        },
+        every even row/.style={
+            before row=\rowcolor{gray!30}
+        },
+        every row/.style={after row=\hline},
+        columns/Recette/.style={
+            column name=Recettes, column type=|p{5cm}
+        },
+        columns/MontantR/.style={
+            column name=Montant (€), column type=r||
+        },
+        columns/Dépense/.style={
+            column name=Dépenses, column type=p{5cm}
+        },
+        columns/MontantD/.style={
+            column name=Montant (€), column type=r|
+        },
+    ]{files/accounts.csv}
     \end{small}
-    \end{center}
-    \caption{Table des recettes et dépence de la compagnie}
-    \end{table}
+\end{table}
 

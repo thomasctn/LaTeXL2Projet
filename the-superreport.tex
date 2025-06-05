@@ -5,7 +5,12 @@
 %%  utf8 used because of LuaLaTeX
 \usepackage[english,french]{babel}
 
-%COMPTE
+%CHAPITRES 1
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%CHAPITRES 2
 \usepackage[T1]{fontenc}
 \usepackage{pgfplotstable}
 \usepackage{booktabs}
@@ -15,11 +20,23 @@
 \usepackage{float}
 \usepackage{luacode}
 \usepackage{longtable}
+\usepackage{pgfplots}
+\usepackage{fontspec}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{csvsimple}
+\usepackage{etoolbox}
+\usepackage{tabularx}
+\usepackage{ifthen}
+\usepackage{xstring}
+% Lecture du CSV (col sep + guillemets)
+\pgfplotstableread[col sep=comma]{files/accounts.csv}{\loadedtable}
 
 
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
+% Alternance des lignes : blanc / gris clair
+\rowcolors{2}{white}{gray!15}
+
+
 
 \pgfplotsset{compat=1.18}
 \geometry{margin=1.5cm}

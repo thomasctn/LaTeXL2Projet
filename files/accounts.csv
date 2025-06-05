@@ -1,20 +1,11 @@
-Recettes,Origine,Montants en euros
-,,
-,Subvention de l’institut inhumain,207721
-,Projet européen,150000
-,Région Bourgogne/Franche-Comté,160000
-,,
-,Total,517721
-,,
-,,
-Dépenses,Origine,Montants en euros
-,,
-,Aménagement de locaux,39214
-,Fonctionnement administratif,148195
-,Équipement scientifique,109352
-,Réserve en vue du déménagement,68681
-,,
-,Total,365442
-,,
-,,
-Résultat,,152279
+Recette,MontantR,Dépense,MontantD
+,,,
+Subvention,207721,Aménagement,39214
+Projet européen,150000,Fonctionnement administratif,148195
+Région,160000,Équipement scientifique,109352
+,,Réserve déménagement,68681
+,,,
+Total,517721,Total,396352
+,,,
+,,,
+Résultat,,,121369
