@@ -1,3 +1,45 @@
 \chapter{Personnel} \label{employees-chapter}
+\begin{table}[h]
+    \centering
+    \caption{Effectifs de la compagnie CJDCI (2024–2025)}
+    \begin{small}
+    \pgfplotstabletypeset[
+        col sep=comma,
+        string type,
+        header=true,
+        every head row/.style={
+            before row=\hline\rowcolor{gray!50}, after row=\hline
+        },
+        every even row/.style={
+            before row=\rowcolor{gray!30}
+        },
+        every row/.style={after row=\hline},
 
-**********
+        % Traitement des colonnes
+        columns/Nom/.style={
+            column name=Nom, column type=|p{3cm},
+            postproc cell content/.append style={
+                /pgfplots/table/@cell content={\cjdcipersonname{##1}{\pgfplotsretvalPrenom}}
+            }
+        },
+        columns/Prenom/.style={
+            column name=Prénom, column type=p{3cm},
+            assign cell content/.code={
+                \pgfkeyslet{/pgfplots/table/@cell content}{##1}
+                \global\let\pgfplotsretvalPrenom##1
+            }
+        },
+        columns/Poste/.style={
+            column name=Poste, column type=p{4cm}
+        },
+        columns/DateNaissance/.style={
+            column name=Date de naissance, column type=c|
+        },
+    ]{files/Effectifs CJDCI 2024-2025.csv}
+    \end{small}
+\end{table}
+
+\vspace{0.5cm}
+
+\section*{Âge moyen au 1er juin 2025}
+\directlua{compute_average_age("files/Effectifs CJDCI 2024-2025.csv", 4)}
