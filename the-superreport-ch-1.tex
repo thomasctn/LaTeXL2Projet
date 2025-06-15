@@ -1,66 +1,78 @@
 \chapter{Equation} \label{equation-chapter}
 
-\[
-	\overrightarrow{\text{grad}\, u} = 
-	\begin{pmatrix}
-		\frac{\partial u}{\partial x} \\
-		\frac{\partial u}{\partial y} \\
-		\frac{\partial u}{\partial z}
-	\end{pmatrix}
-\]
+\cjdcipersonname{BOITEUX}{Elouan}
+\cjdcipersonname{MARIAUX}{Aymeric}
+\cjdcipersonname{MATHIAS}{Killian}
+% \[
+% 	\overrightarrow{\text{grad}\, u} = 
+% 	\begin{pmatrix}
+% 		\frac{\partial u}{\partial x} \\
+% 		\frac{\partial u}{\partial y} \\
+% 		\frac{\partial u}{\partial z}
+% 	\end{pmatrix}
+% \]
 
 
 
 
 
-\[
-	\text{div}\, \overrightarrow{V} = \frac{\partial V_x}{\partial x} + \frac{\partial V_y}{\partial y} + \frac{\partial V_z}{\partial z}
-\]
+% \[
+% 	\text{div}\, \overrightarrow{V} = \frac{\partial V_x}{\partial x} + \frac{\partial V_y}{\partial y} + \frac{\partial V_z}{\partial z}
+% \]
 
 
 
 
 
-\[
-	\overrightarrow{\text{rot}\, V} = 
-	\begin{vmatrix}
-		\overrightarrow{i}          & \overrightarrow{j}          & \overrightarrow{k}          \\
-		\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
-		V_x                         & V_y                         & V_z
-	\end{vmatrix}
-\]
+% \[
+% 	\overrightarrow{\text{rot}\, V} = 
+% 	\begin{vmatrix}
+% 		\overrightarrow{i}          & \overrightarrow{j}          & \overrightarrow{k}          \\
+% 		\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+% 		V_x                         & V_y                         & V_z
+% 	\end{vmatrix}
+% \]
 
 
 
 
 
-\[
-	\Delta u = \text{div}\, \overrightarrow{\text{grad}\, u}
-\]
+% \[
+% 	\Delta u = \text{div}\, \overrightarrow{\text{grad}\, u}
+% \]
 
 
 
 
 
-\[
-	\overrightarrow{\Delta}\, \overrightarrow{V} = \overrightarrow{\text{grad}\, \text{div}\, \overrightarrow{V}} - \text{rot}\, \overrightarrow{\text{rot}\, V}
-\]
+% \[
+% 	\overrightarrow{\Delta}\, \overrightarrow{V} = \overrightarrow{\text{grad}\, \text{div}\, \overrightarrow{V}} - \text{rot}\, \overrightarrow{\text{rot}\, V}
+% \]
 
-'\begin{align*}
-    \overrightarrow{\text{grad}}\ u &=
-    \begin{pmatrix}
-        \hspace{0.2em} \frac{\partial u}{\partial x} \hspace{0.2em} \\[0.8em]
-        \hspace{0.2em}\frac{\partial u}{\partial y} \hspace{0.2em}\\[0.8em]
-        \hspace{0.2em}\frac{\partial u}{\partial z} \hspace{0.2em}
-    \end{pmatrix} \\
-    \text{div}\, \overrightarrow{V} &= \frac{\partial V_x}{\partial x} + \frac{\partial V_y}{\partial y} + \frac{\partial V_z}{\partial z} \\
-    \overrightarrow{\text{rot}}\ \overrightarrow{V}&=
-    \begin{vmatrix}
-        \hspace{0.3em} \overrightarrow{i} & \overrightarrow{j} & \overrightarrow{k} \hspace{0.3em} \\[0.8em]
-        \hspace{0.3em} \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \hspace{0.3em} \\[0.8em]
-        \hspace{0.3em} V_x & V_y & V_z \hspace{0.3em}
-    \end{vmatrix} \\
-    \Delta u &= \text{div}\, \overrightarrow{\text{grad}}\ u \\
-    \overrightarrow{\Delta}\, \overrightarrow{V} &= 
-    \overrightarrow{\text{grad}}\ \text{div}\, \overrightarrow{V} -\overrightarrow{\text{rot}}\ \overrightarrow{\text{rot}}\ \overrightarrow{V}
+\begin{align*}
+    \overrightarrow{\text{grad}\, u} \quad &= \quad
+    \left(
+    \begin{array}{c}
+        % \rule{0pt}{1ex} \\
+        \makebox[2em]{\hspace{0.2em} $\dfrac{\partial u}{\partial x}$ \hspace{0.2em}} \\[1.2em]
+        \makebox[2em]{\hspace{0.2em} $\dfrac{\partial u}{\partial y}$ \hspace{0.2em}} \\[1.2em]
+        \makebox[2em]{\hspace{0.2em} $\dfrac{\partial u}{\partial z}$ \hspace{0.2em}}\\
+        % \rule{0pt}{1ex} \\
+    \end{array}
+    \right) \\[1em]
+    \text{div}\, \overrightarrow{V} \quad &= \quad \frac{\partial V_x}{\partial x} + \frac{\partial V_y}{\partial y} + \frac{\partial V_z}{\partial z} \\[1em]
+    \overrightarrow{\text{rot}}\ \overrightarrow{V} \quad &= \quad
+\left|
+\begin{array}{c@{\hskip 1.5em}c@{\hskip 1.5em}c}
+    \rule{0pt}{4ex} 
+    \overrightarrow{i} & \overrightarrow{j} & \overrightarrow{k} \\[2em]
+    \rule{0pt}{3ex}
+    \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\[2em]
+    V_x & V_y & V_z \\[-2ex]
+    \rule{0pt}{1ex} 
+\end{array}
+\right| \\[1em]
+    \Delta u \quad &= \quad \text{div}\, \overrightarrow{\text{grad}}\ u \\[1em]
+    \overrightarrow{\Delta}\, \overrightarrow{V} \quad &= \quad
+    \overrightarrow{\text{grad}}\ \text{div}\, \overrightarrow{V} - \overrightarrow{\text{rot}}\ \overrightarrow{\text{rot}}\ \overrightarrow{V}
 \end{align*}
