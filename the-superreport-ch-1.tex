@@ -1,3 +1,4 @@
+\chapter{Equation} \label{equation-chapter}
 
 \[
 	\overrightarrow{\text{grad}\, u} = 
@@ -45,3 +46,21 @@
 	\overrightarrow{\Delta}\, \overrightarrow{V} = \overrightarrow{\text{grad}\, \text{div}\, \overrightarrow{V}} - \text{rot}\, \overrightarrow{\text{rot}\, V}
 \]
 
+'\begin{align*}
+    \overrightarrow{\text{grad}}\ u &=
+    \begin{pmatrix}
+        \hspace{0.2em} \frac{\partial u}{\partial x} \hspace{0.2em} \\[0.8em]
+        \hspace{0.2em}\frac{\partial u}{\partial y} \hspace{0.2em}\\[0.8em]
+        \hspace{0.2em}\frac{\partial u}{\partial z} \hspace{0.2em}
+    \end{pmatrix} \\
+    \text{div}\, \overrightarrow{V} &= \frac{\partial V_x}{\partial x} + \frac{\partial V_y}{\partial y} + \frac{\partial V_z}{\partial z} \\
+    \overrightarrow{\text{rot}}\ \overrightarrow{V}&=
+    \begin{vmatrix}
+        \hspace{0.3em} \overrightarrow{i} & \overrightarrow{j} & \overrightarrow{k} \hspace{0.3em} \\[0.8em]
+        \hspace{0.3em} \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \hspace{0.3em} \\[0.8em]
+        \hspace{0.3em} V_x & V_y & V_z \hspace{0.3em}
+    \end{vmatrix} \\
+    \Delta u &= \text{div}\, \overrightarrow{\text{grad}}\ u \\
+    \overrightarrow{\Delta}\, \overrightarrow{V} &= 
+    \overrightarrow{\text{grad}}\ \text{div}\, \overrightarrow{V} -\overrightarrow{\text{rot}}\ \overrightarrow{\text{rot}}\ \overrightarrow{V}
+\end{align*}
