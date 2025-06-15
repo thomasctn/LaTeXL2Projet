@@ -34,12 +34,7 @@
         },
         columns/DateNaissance/.style={
             column name=Date de naissance, column type=c|
-        },
+        }
     ]{files/Effectifs CJDCI 2024-2025.csv}
     \end{small}
 \end{table}
-
-\vspace{0.5cm}
-
-\section*{Âge moyen au 1er juin 2025}
-\directlua{compute_average_age("files/Effectifs CJDCI 2024-2025.csv", 4)}
