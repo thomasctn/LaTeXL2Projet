@@ -29,6 +29,8 @@
 \usepackage{tabularx}
 \usepackage{ifthen}
 \usepackage{xstring}
+\usepackage{makeidx}
+
 
 % Lecture du CSV (col sep + guillemets)
 \pgfplotstableread[col sep=comma]{files/accounts.csv}{\loadedtable}
@@ -49,6 +51,8 @@
 \setlength{\textwidth}{160mm}
 \setlength{\evensidemargin}{-5.45mm}
 \setlength{\oddsidemargin}{-5.45mm}
+
+\makeindex
 
 \newcommand{\cjdcipersonname}[2]{#2\ #1\index{\cjdcipersonnameindex{#1}{#2}}}
 \newcommand{\cjdcipersonnameindex}[2]{#1, #2}
@@ -71,6 +75,8 @@ du \textbf{C}\textsc{mi} \textbf{I}nformatique.}}
 \author{}
 \date{Juin 2025}
 
+
+
 \begin{document}
 
 \maketitle
@@ -80,5 +86,7 @@ du \textbf{C}\textsc{mi} \textbf{I}nformatique.}}
 \include{the-superreport-ch-2}
 
 \include{the-superreport-ch-3}
+
+\printindex
 
 \end{document}
