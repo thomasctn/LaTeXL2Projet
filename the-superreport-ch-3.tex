@@ -41,5 +41,53 @@
     \caption{Effectifs de la compagnie CJDCI (2024–2025)}
 \end{table}
 
+\begin{luacode*}
+function age_in_month(date)
+    local day, month, year = date:match("(%d+)/(%d+)/(%d+)")
+
+    if not day or not month or not year then
+        return nil
+    end
+
+    day, month, year = tonumber(day), tonumber(month), tonumber(year)
+
+    local som_month = (2025 - year) * 12 + 6 - month
+    if day > 1 then
+        som_month = som_month - 1
+    end
+
+    return som_month
+end
+
+function compute_average_age(file)
+    local f = io.open(file, "r")
+    if not f then
+        tex.print("Error : file not found.")
+        return
+    end
+
+    local som_month, nb = 0, 0
+
+    for line in f:lines() do
+        local name, email1, email2, date = line:match("^([^;]*);([^;]*);([^;]*);([^;\n\r]*)")
+
+        local age = age_in_month(date)
+        if age then
+            som_month = som_month + age
+            nb = nb + 1
+        end
+    end
+
+    if nb > 0 then
+        local moy_year, moy_month = math.floor((som_month / nb) / 12), math.floor((som_month / nb) % 12)
+
+        tex.print(string.format("%d ans et %d mois", moy_year, moy_month))
+    end
+
+    return
+end
+\end{luacode*}
+
 \noindent
-En moyenne, les membres du personnel ont 
+En moyenne, les membres du personnel ont \directlua{compute_average_age("files/Effectifs CJDCI 2024-2025.csv")}
+
