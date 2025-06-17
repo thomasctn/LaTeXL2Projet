@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.4.2)  17 JUN 2025 13:15
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.4.2)  17 JUN 2025 19:33
  system commands enabled.
 **the-superreport.tex
 (./the-superreport.tex
@@ -952,10 +952,29 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@cols=\count349
 \TX@ftn=\toks51
 )
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count350
+\calc@Bcount=\count351
+\calc@Adimen=\dimen314
+\calc@Bdimen=\dimen315
+\calc@Askip=\skip63
+\calc@Bskip=\skip64
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count352
+\calc@Cskip=\skip65
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+))
 (/usr/local/texlive/2025/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2025/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count350
-\xs_countb=\count351
+\xs_counta=\count353
+\xs_countb=\count354
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
@@ -969,39 +988,38 @@ PGFPlots: reading {files/accounts.csv}
 
 Writing index file the-superreport.idx
 (./the-superreport.aux (./the-superreport-ch-1.aux) (./the-superreport-ch-2.aux
-) (./the-superreport-ch-3.aux))
+))
 \openout1 = the-superreport.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Info: Redefining \up on input line 74.
-
-(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Info: Redefining \up on input line 79.
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count352
-\scratchdimen=\dimen314
+\scratchcounter=\count355
+\scratchdimen=\dimen316
 \scratchbox=\box77
-\nofMPsegments=\count353
-\nofMParguments=\count354
+\nofMPsegments=\count356
+\nofMParguments=\count357
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count355
-\MPscratchDim=\dimen315
-\MPnumerator=\count356
-\makeMPintoPDFobject=\count357
+\MPscratchCnt=\count358
+\MPscratchDim=\dimen317
+\MPnumerator=\count359
+\makeMPintoPDFobject=\count360
 \everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1056,62 +1074,62 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 74.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 74.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 74.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 74.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 74.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 74.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 74.
-LaTeX Font Info:    Redeclaring math accent \check on input line 74.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 74.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 74.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 74.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 74.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 74.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 79.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 79.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 79.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 79.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 79.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 79.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 79.
+LaTeX Font Info:    Redeclaring math accent \check on input line 79.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 79.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 79.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 79.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 79.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 74.
+(Font)              `operators' in the math version `normal' on input line 79.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 74.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 79.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 74.
+(Font)              `operators' in the math version `bold' on input line 79.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 74.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 79.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 74.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 74.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 74.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 74.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 74.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 79.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 74.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 74.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 74.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 74.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1135,71 +1153,56 @@ Chapitre 1.
  (./the-superreport-ch-2.tex
 Chapitre 2.
 PGFPlots: reading {files/accounts.csv}
-)
+
+Overfull \hbox (57.30542pt too wide) in paragraph at lines 160--161
+ [][] 
+ []
+
+
 
 [2
 
 
 
 
-]
-\openout2 = the-superreport-ch-3.aux
- (./the-superreport-ch-3.tex
-Chapitre 3.
-PGFPlots: reading {"files/Effectifs CJDCI 2024-2025.csv"}
-
-Package pgfplots Warning: Table '"files/Effectifs CJDCI 2024-2025.csv"' has an 
-empty column name; replacing it by '1'' on input line 39.
-
- [warning /pgfplots/warning/empty column name]
-
-Overfull \hbox (91.74588pt too wide) in paragraph at lines 39--41
- [] 
- []
-
-)
-
-[3
-
-
-
-
-]
-No file the-superreport.ind.
-(./the-superreport.aux (./the-superreport-ch-1.aux) (./the-superreport-ch-2.aux
-) (./the-superreport-ch-3.aux))
+] (./the-superreport.aux (./the-superreport-ch-1.aux)
+(./the-superreport-ch-2.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-)
+))
+(\end occurred when \iftrue on line 85 was incomplete)
+(\end occurred when \if on line 85 was incomplete)
+(\end occurred when \if on line 85 was incomplete)
 
 Here is how much of LuaTeX's memory you used:
- 31363 strings out of 475506
+ 31564 strings out of 475506
  100000,1648299 words of node,token memory allocated
- 785 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 7 glue, 4 kern, 1 penalty, 2 glyph, 96 attribute, 6
-0 glue_spec, 15 attribute_list, 4 write nodes
-   avail lists: 2:4894,3:117,4:228,5:358,6:52,7:3288,8:46,9:1016,10:6,11:198
- 53479 multiletter control sequences out of 65536+600000
- 81 fonts using 6018919 bytes
- 114i,27n,113p,732b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf>
-</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.o
-tf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regula
-r.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmromancaps10
--regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroma
-n17-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb>
-Output written on the-superreport.pdf (4 pages, 69273 bytes).
+ 697 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 penalty, 2 glyph, 68 attribute, 6
+2 glue_spec, 11 attribute_list, 2 write nodes
+   avail lists: 2:5903,3:575,4:200,5:318,6:54,7:2668,8:46,9:1016,10:6,11:162
+ 53688 multiletter control sequences out of 65536+600000
+ 79 fonts using 5755479 bytes
+ 114i,27n,113p,732b,746s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.ot
+f></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.ot
+f></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.ot
+f></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular
+.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regu
+lar.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmromancaps
+10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmro
+man17-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb>
+Output written on the-superreport.pdf (3 pages, 70538 bytes).
 
-PDF statistics: 82 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+PDF statistics: 86 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

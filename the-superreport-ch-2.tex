@@ -1,12 +1,14 @@
 \chapter{Comptes} \label{accounts-chapter}
 
 
-\par
+\vspace{-0.5cm}
 \noindent
 \cjdcipersonname{COUTANT}{Thomas} \
 \cjdcipersonname{LITAMPHA}{Benoît} \
 \cjdcipersonname{GEHANT}{Aurélie}
 % Alternance des lignes : blanc / gris clair
+
+%===========TABLEAU===========
 \rowcolors{2}{white}{gray!15}
 \begin{table}[h]
     \centering
@@ -40,3 +42,125 @@
     \caption{Table des recettes et dépenses de la compagnie CJDCI (2024–2025)}
 \end{table}
 
+%===========GRAPHIQUE===========
+\newcommand{\drawBar}[4]{%
+  \ifx#3\myempty
+    % Si valeur vide : ne rien dessiner
+  \else
+    \ifdim #3pt = 0pt
+      % Si valeur nulle : ne rien dessiner
+    \else
+      \ifdim #3pt > 0pt
+        % Barre positive (recette)
+        \draw[fill=green!60] (#1,0) rectangle +(0.8,#3);
+        \node[above] at (#1+0.4,#3) {\small #4};
+        \node[below=10pt, rotate=90, anchor=east] at (#1+0.4,0) {\scriptsize #2};
+      \else
+        % Barre négative (dépense)
+        \draw[fill=red!60] (#1,0) rectangle +(0.8,#3);
+        \node[below] at (#1+0.4,#3) {\small #4};
+        \node[above=10pt, rotate=90, anchor=west] at (#1+0.4,0) {\scriptsize #2};
+      \fi
+    \fi
+  \fi
+}
+    
+
+\newcommand{\drawBarChart}{%
+  \begin{tikzpicture}[x=2cm,y=0.02cm]
+    \draw[->] (-0.5,0) -- (8.5,0);     % Axe horizontal
+    \draw[->] (0,-160) -- (0,260);     % Axe vertical
+
+    \foreach \i in {0,...,7} {
+      \pgfmathtruncatemacro{\idx}{\i+1}
+
+      \edef\label{\directlua{
+        local data = prepare_data()
+        tex.sprint(data[\idx][1] or "")
+      }}
+
+      \edef\scaledval{\directlua{
+        local data = prepare_data()
+        tex.sprint(data[\idx][2] or 0)
+      }}
+
+      \edef\realval{\directlua{
+        local data = prepare_data()
+        tex.sprint(data[\idx][3] or 0)
+      }}
+
+      \drawBar{\i}{\label}{\scaledval}{\realval}
+    }
+  \end{tikzpicture}
+}
+
+\begin{luacode*}
+function prepare_data()
+  -- Fichier CSV contenant les données : 2 colonnes pour les recettes, 2 pour les dépenses
+  local filename = "files/accounts.csv"
+
+  -- Tableaux pour stocker les recettes et les dépenses séparément
+  local recettes = {}
+  local depenses = {}
+
+  -- Lecture du fichier ligne par ligne
+  for line in io.lines(filename) do
+    -- Extraction des 4 champs (séparés par des virgules) : label et montant pour recette et dépense
+    local rlabel, rmontant, dlabel, dmontant = line:match("^([^,]*),([^,]*),([^,]*),([^,]*)")
+
+    -- Conversion des montants texte en nombres (si échec => 0)
+    local rval = tonumber(rmontant) or 0
+    local dval = tonumber(dmontant) or 0
+
+    -- Si la ligne de recette est valide (non vide, pas un en-tête ou total, et valeur non nulle)
+    if rlabel and rlabel ~= "Recette" and rlabel ~= "Total" and rval ~= 0 then
+      table.insert(recettes, {rlabel, rval, rval}) -- on stocke : nom, valeur mise à l’échelle (plus tard), valeur réelle
+    end
+
+    -- Idem pour les dépenses (on stocke la valeur négative pour affichage en bas du graphe)
+    if dlabel and dlabel ~= "Dépense" and dlabel ~= "Total" and dval ~= 0 then
+      table.insert(depenses, {dlabel, -dval, -dval}) -- valeurs négatives pour barre descendante
+    end
+  end
+
+  -- On complète à 4 éléments si besoin (pour éviter les index manquants dans le graphique)
+  while #recettes < 4 do table.insert(recettes, {"", 0, 0}) end
+  while #depenses < 4 do table.insert(depenses, {"", 0, 0}) end
+
+  -- Fusion des deux tableaux dans un seul pour traitement et affichage
+  local all = {}
+  for i=1,4 do all[i] = recettes[i] end
+  for i=1,4 do all[i+4] = depenses[i] end
+
+  -- Recherche de la valeur absolue maximale pour l’échelle du graphique
+  local max_val = 0
+  for i,v in ipairs(all) do
+    local abs_v = math.abs(v[2]) -- valeur absolue
+    if abs_v > max_val then max_val = abs_v end
+  end
+
+  -- Calcul du facteur d’échelle pour adapter à la hauteur max du graphe (100 unités visuelles)
+  local scale = max_val / 100
+  if scale == 0 then scale = 1 end -- éviter division par zéro
+
+  -- Mise à l’échelle de toutes les valeurs à dessiner
+  for i,v in ipairs(all) do
+    v[2] = v[2] / scale -- on conserve la valeur réelle en v[3]
+  end
+
+  -- Retourne le tableau des données prêtes à dessiner
+  return all
+end
+\end{luacode*}
+
+
+
+\begin{figure}[H]
+  \centering
+  \drawBarChart
+    \caption{Diagramme des recettes et dépenses de la compagnie CJDCI (2024–2025)}
+  \label{fig:recettes-depenses}
+\end{figure}
+
+
+\end{document}

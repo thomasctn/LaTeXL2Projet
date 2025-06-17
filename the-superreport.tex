@@ -27,9 +27,11 @@
 \usepackage{csvsimple}
 \usepackage{etoolbox}
 \usepackage{tabularx}
+\usepackage{xifthen}
 \usepackage{ifthen}
 \usepackage{xstring}
 \usepackage{makeidx}
+\usepackage{xparse}
 
 
 % Lecture du CSV (col sep + guillemets)
@@ -45,6 +47,9 @@
 \setlength{\textwidth}{160mm}
 \setlength{\evensidemargin}{-5.45mm}
 \setlength{\oddsidemargin}{-5.45mm}
+
+\newcommand{\myempty}{\relax}
+
 
 \makeindex
 
