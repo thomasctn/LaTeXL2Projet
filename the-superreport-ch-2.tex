@@ -67,9 +67,9 @@
     
 
 \newcommand{\drawBarChart}{%
-  \begin{tikzpicture}[x=2cm,y=0.02cm]
-    \draw[->] (-0.5,0) -- (8.5,0);     % Axe horizontal
-    \draw[->] (0,-160) -- (0,260);     % Axe vertical
+  \begin{tikzpicture}[x=2cm,y=0.035cm]
+    \draw[->] (0,0) -- (8.5,0);     % Axe horizontal
+    \draw[->] (0,-100) -- (0,160);     % Axe vertical
 
     \foreach \i in {0,...,7} {
       \pgfmathtruncatemacro{\idx}{\i+1}
@@ -161,6 +161,3 @@ end
     \caption{Diagramme des recettes et dépenses de la compagnie CJDCI (2024–2025)}
   \label{fig:recettes-depenses}
 \end{figure}
-
-
-\end{document}
