@@ -7,7 +7,7 @@
 
 \section*{Liste du personnel :}
 \begin{table}[h]
-    \begin{center}
+    \hspace{-12mm}
     \begin{small}
     \pgfplotstabletypeset[
         col sep=semicolon,
@@ -31,16 +31,15 @@
             column name=, column type=r
         },
         display columns/2/.style={
-            column name=Email pro et perso, column type=l||
+            column name=\hspace*{-6em}Email pro et perso, column type=l||
         },
         display columns/3/.style={
             column name=Date de naissances, column type=c|
         }
     ]{files/Effectifs CJDCI 2024-2025.csv}
     \end{small}
-    \end{center}
     \caption{Effectifs de la compagnie CJDCI (2024–2025)}
 \end{table}
 
-\section*{Âge moyen au 1er juin 2025 : }
-
+\noindent
+En moyenne, les membres du personnel ont 
