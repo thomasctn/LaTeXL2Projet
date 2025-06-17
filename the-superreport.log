@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.3.18)  15 JUN 2025 21:35
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.4.2)  17 JUN 2025 13:15
  system commands enabled.
 **the-superreport.tex
 (./the-superreport.tex
@@ -8,8 +8,8 @@ Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
 collection.
-luaotfload | conf : Root cache directory is "/Users/killianmathias/Library/texli
-ve/2025/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/thomas/.texlive2025/texmf-var
+/luatex-cache/generic/names".
 luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
 olved path "/usr/local/texlive/2025/texmf-dist/tex/luatex/luaotfload/fontloader-
 2023-12-28.lua".
@@ -20,8 +20,8 @@ Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "/Users/killianmathias/Library/texli
-ve/2025/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/thomas/.texlive2025/texmf-var
+/luatex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -44,8 +44,8 @@ Inserting `tracingstacklevels' in `input_level_string'. (/usr/local/texlive/202
 Document Class: report 2024/06/29 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from /Users/killianmathias/Library/
-texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
+luaotfload | db : Font names database loaded from /home/thomas/.texlive2025/texm
+f-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 \c@part=\count194
 \c@chapter=\count195
 \c@section=\count196
@@ -60,7 +60,7 @@ texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 \bibindent=\dimen140
 )
 (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
+Package: babel 2025/03/27 v25.6 The multilingual framework for pdfLaTeX, LuaLaT
 eX and XeLaTeX
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/luababel.def
@@ -959,8 +959,15 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
 PGFPlots: reading {files/accounts.csv}
+\@indexfile=\write5
 
+\openout5 = the-superreport.idx
+
+Writing index file the-superreport.idx
 (./the-superreport.aux (./the-superreport-ch-1.aux) (./the-superreport-ch-2.aux
 ) (./the-superreport-ch-3.aux))
 \openout1 = the-superreport.aux
@@ -1135,8 +1142,32 @@ PGFPlots: reading {files/accounts.csv}
 
 
 
-] (./the-superreport.aux (./the-superreport-ch-1.aux)
-(./the-superreport-ch-2.aux))
+]
+\openout2 = the-superreport-ch-3.aux
+ (./the-superreport-ch-3.tex
+Chapitre 3.
+PGFPlots: reading {"files/Effectifs CJDCI 2024-2025.csv"}
+
+Package pgfplots Warning: Table '"files/Effectifs CJDCI 2024-2025.csv"' has an 
+empty column name; replacing it by '1'' on input line 39.
+
+ [warning /pgfplots/warning/empty column name]
+
+Overfull \hbox (91.74588pt too wide) in paragraph at lines 39--41
+ [] 
+ []
+
+)
+
+[3
+
+
+
+
+]
+No file the-superreport.ind.
+(./the-superreport.aux (./the-superreport-ch-1.aux) (./the-superreport-ch-2.aux
+) (./the-superreport-ch-3.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1144,15 +1175,15 @@ L3 programming layer <2025-01-18>
 )
 
 Here is how much of LuaTeX's memory you used:
- 31285 strings out of 475506
+ 31363 strings out of 475506
  100000,1648299 words of node,token memory allocated
- 725 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 penalty, 2 glyph, 82 attribute, 6
-0 glue_spec, 13 attribute_list, 4 write nodes
-   avail lists: 2:4910,3:123,4:192,5:290,6:52,7:1630,8:46,9:1016,10:6,11:86
- 53426 multiletter control sequences out of 65536+600000
- 79 fonts using 5755543 bytes
- 114i,27n,113p,732b,521s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 785 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 7 glue, 4 kern, 1 penalty, 2 glyph, 96 attribute, 6
+0 glue_spec, 15 attribute_list, 4 write nodes
+   avail lists: 2:4894,3:117,4:228,5:358,6:52,7:3288,8:46,9:1016,10:6,11:198
+ 53479 multiletter control sequences out of 65536+600000
+ 81 fonts using 6018919 bytes
+ 114i,27n,113p,732b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf>
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.o
@@ -1165,10 +1196,10 @@ cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm
 mmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
 0.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb>
-Output written on the-superreport.pdf (3 pages, 64323 bytes).
+Output written on the-superreport.pdf (4 pages, 69273 bytes).
 
-PDF statistics: 79 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+PDF statistics: 82 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
